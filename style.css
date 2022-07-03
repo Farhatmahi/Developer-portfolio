@@ -32,18 +32,13 @@ button {
   margin-top: 10px;
 }
 
-section {
-  display: flex;
+.flex{
+    display: flex;
 }
 
 .half-width {
   width: 50%;
   margin: 0 5%;
-}
-
-.half-width:first-of-type {
-  margin-top: 40px;
-  margin-left: 120px;
 }
 
 .half-width img {
@@ -57,6 +52,11 @@ section {
   margin-bottom: 40px;
 }
 
+#banner .half-width:first-of-type {
+    margin-top: 40px;
+    margin-left: 120px;
+  }
+
 #dream {
   margin: 40px 0;
   background-image: url(./images/dream-bg.png);
@@ -67,4 +67,42 @@ section {
 #dream .half-width:last-of-type {
   margin-top: 90px;
   margin-right: 200px;
+}
+
+#experiences{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#experiences h1{
+    margin-left: 05%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+#experiences .flex .half-width{
+    border-left: 5px solid black;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 50px 0 #7e7e7e;
+}
+
+#experiences .flex .half-width:first-of-type{
+    border-color: #FF6247;
+}
+
+#experiences .flex .half-width:last-of-type{
+    border-color: #0000f3;
+}
+
+#experiences .flex .half-width h1{
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#experiences .flex .half-width h3{
+    color: #ffa500;
 }
